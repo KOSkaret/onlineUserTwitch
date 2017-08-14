@@ -11,3 +11,8 @@ User story 3: If a twitch user is currently streaming, I can see additional deta
 ## What to use?
 Will create a standard web page, while using the twitch api to fetch the streamers information.
 Using sass(a CSS pre-compiler), vanilla JS and html.
+
+The color palette is taken from this page:
+https://material.io/guidelines/style/color.html#color-color-palette
+
+And are used in this project.
