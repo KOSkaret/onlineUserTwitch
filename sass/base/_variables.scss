@@ -1,0 +1,29 @@
+//Fonts
+@import url('https://fonts.googleapis.com/css?family=Archivo:500|Open+Sans');
+
+$header-font: 'Archivo', sans-serif;
+$primary-font: 'Open Sans',sans-serif;
+
+//Primary
+$white: #FFF;
+$black: #000;
+
+//color palette
+
+$purple-500: #9c27b0;
+$purple-700: #7b1fa2;
+
+$deep-purple-500: #673ab7;
+$deep-purple-700: #512da8;
+
+$green-A400: #00e676;
+
+$red-A400:#ff1744;
+
+
+//designated colors:
+$header-color: $deep-purple-700;
+$body-color: $deep-purple-500;
+
+$status-online: $green-A400;
+$status-offline: $red-A400;

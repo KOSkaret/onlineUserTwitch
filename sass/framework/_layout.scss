@@ -1,0 +1,47 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body,div,p,article{
+  display: flex;
+  flex-direction: column;
+}
+
+span, svg{
+  display: inline-flex;
+  flex-direction: row;
+}
+
+
+.body{
+  background-color: $body-color;
+}
+
+.header{
+  padding: 20px;
+  font-size: 180%;
+  font-weight: 500;
+  background: $header-color;
+  font-family: $header-font;
+}
+
+#twitch-embed{
+
+  margin: auto;
+  width: 100%;
+  iframe{
+    margin: 10px auto;
+
+    border:0;
+
+    height: 480px;
+    width: 100%;
+  }
+}
+
+.streamers{
+  font-family: $primary-font;
+  margin-top: 20px;
+}

@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css?family=Archivo:500|Open+Sans");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body, div, p, article {
+  display: flex;
+  flex-direction: column; }
+
+span, svg {
+  display: inline-flex;
+  flex-direction: row; }
+
+.body {
+  background-color: #673ab7; }
+
+.header {
+  padding: 20px;
+  font-size: 180%;
+  font-weight: 500;
+  background: #512da8;
+  font-family: "Archivo", sans-serif; }
+
+#twitch-embed {
+  margin: auto;
+  width: 100%; }
+  #twitch-embed iframe {
+    margin: 10px auto;
+    border: 0;
+    height: 480px;
+    width: 100%; }
+
+.streamers {
+  font-family: "Open Sans", sans-serif;
+  margin-top: 20px; }
+
+.twitcher {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #FFF;
+  width: 100%;
+  box-shadow: 1px 1px 3px #333;
+  padding: 15px 10px; }
+
+.twitch_main {
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center; }
+
+.twitch_online {
+  color: #00e676; }
+
+.twitch_offline {
+  color: #ff1744; }
+
+.twitch_header {
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 5px; }
+
+.twitch_user {
+  font-size: 120%;
+  font-weight: 700; }
+
+.twitch_status {
+  color: #bdbdbd; }
+
+/*# sourceMappingURL=main.css.map */
