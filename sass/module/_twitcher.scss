@@ -1,4 +1,6 @@
 .twitcher{
+  grid-area: sidebar;
+
   display:flex;
   flex-direction: column;
   justify-content: center;
@@ -6,7 +8,7 @@
   background-color: $white;
   width: 100%;
   box-shadow: 1px 1px 3px #333;
-  padding: 15px 10px;
+
 }
 
 .twitch_main{
@@ -15,8 +17,6 @@
   align-items: center;
 }
 
-.twitch_game{
-}
 .twitch_online{
   color: $status-online;
 }
@@ -30,13 +30,13 @@
   justify-content: space-between;
   align-items: center;
   padding-bottom: 5px;
-}
 
-.twitch_user {
-  font-size: 120%;
-  font-weight: 700;
-}
+  p {
+    color: #bdbdbd;
+  }
 
-.twitch_status{
-  color: #bdbdbd
+  h1 {
+    font-size: 120%;
+    font-weight: 700;
+  }
 }
