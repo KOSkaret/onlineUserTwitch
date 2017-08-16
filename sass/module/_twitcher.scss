@@ -1,42 +1,31 @@
 .twitcher{
-  grid-area: sidebar;
-
   display:flex;
   flex-direction: column;
-  justify-content: center;
 
   background-color: $white;
   width: 100%;
-  box-shadow: 1px 1px 3px #333;
+  box-shadow: 1px 1px 3px #111;
+  
+  padding: 10px;
 
-}
-
-.twitch_main{
-  flex-flow: row wrap;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.twitch_online{
-  color: $status-online;
-}
-
-.twitch_offline{
-  color: $status-offline;
-}
-
-.twitch_header{
-  flex-flow: row wrap;
-  justify-content: space-between;
-  align-items: center;
-  padding-bottom: 5px;
+  .twitcher_status{
+    align-self: flex-end;
+  }
 
   p {
-    color: #bdbdbd;
+    color: $twitcher-text;
   }
 
   h1 {
     font-size: 120%;
     font-weight: 700;
   }
+}
+
+.online{
+  color: $status-online;
+}
+
+.offline{
+  color: $status-offline;
 }

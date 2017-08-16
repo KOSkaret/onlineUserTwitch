@@ -16,26 +16,29 @@ span, svg{
 
 
 .container{
-  height: 100vh;
-  width: 100vw;
 
+  background-color: $body-color;
+  @media screen and (min-width: 598px){
+  height: 100vh;
   display:grid;
 
-  justify-item: center;
-
-  grid-template-columns: 20% calc(80% - 10px);
-  grid-template-rows: calc(95% - 10px) 5%;
-  background-color: $body-color;
-
+  grid-template-columns: 0px 40% calc(60% - 30px) 0px;
+  grid-template-rows: 10% calc(88% - 10px) 2%;
   grid-template-areas:
-    "sidebar main"
-    "header header";
+  "header header header header"
+    ". sidebar main ."
+    ". . . .";
 
   grid-gap: 10px 10px;
+  }
 }
 
 .header{
   grid-area:header;
+  justify-content: space-around;
+
+  border-bottom: 2px solid #000;
+
   font-size: 180%;
   font-weight: 500;
   background: $header-color;
@@ -44,17 +47,17 @@ span, svg{
 
 #twitch-embed{
   grid-area: main;
-  margin: auto;
-  width: 100%;
-  height: 100%;
   iframe{
-    width: 100%;
+    border-style:none;
     height: 100%;
-    border:0;
   }
 }
 
 .streamers{
+  grid-area: sidebar;
   font-family: $primary-font;
-  margin-top: 20px;
+
+  display:flex;
+  flex-direction: column;
+
 }
