@@ -5,8 +5,17 @@ function insertFrame(url){
   twitchEmbed.innerHTML='<iframe src="'+ url +'"></iframe>';
 }
 
-insertFrame(twitchUrl);
+function resizeEmbeddedPlayer(object){
+  object.style.height = object.clientWidth / 16 * 9 + 'px';
+}
 
 var resizeEvent = window.addEventListener('resize',function(){
-    twitchEmbed.style.height = twitchEmbed.clientWidth / 16 * 9 + 'px';
+    resizeEmbeddedPlayer(twitchEmbed);
 });
+
+
+insertFrame(twitchUrl);
+
+window.onload = function(){
+  resizeEmbeddedPlayer(twitchEmbed);
+}

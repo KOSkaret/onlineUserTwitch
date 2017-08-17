@@ -14,7 +14,7 @@ span, svg {
 
 .container {
   background-color: #673ab7; }
-  @media screen and (min-width: 598px) {
+  @media screen and (min-width: 970px) {
     .container {
       height: 100vh;
       display: grid;
@@ -43,6 +43,16 @@ span, svg {
   font-family: "Open Sans", sans-serif;
   display: flex;
   flex-direction: column; }
+  .streamers form {
+    background: #673ab7;
+    border-bottom-style: solid;
+    border-top-style: solid; }
+    .streamers form input {
+      background: inherit;
+      padding: 5px;
+      border: none;
+      width: 100%;
+      height: 100%; }
 
 .twitcher {
   display: flex;

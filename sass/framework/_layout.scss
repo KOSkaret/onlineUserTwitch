@@ -18,7 +18,7 @@ span, svg{
 .container{
 
   background-color: $body-color;
-  @media screen and (min-width: 598px){
+  @media screen and (min-width: 970px){
   height: 100vh;
   display:grid;
 
@@ -47,6 +47,7 @@ span, svg{
 
 #twitch-embed{
   grid-area: main;
+
   iframe{
     border-style:none;
     height: 100%;
@@ -59,5 +60,19 @@ span, svg{
 
   display:flex;
   flex-direction: column;
+
+  form{
+    background: $body-color;
+    border-bottom-style: solid;
+    border-top-style: solid;
+
+    input{
+      background: inherit;
+      padding: 5px;
+      border: none;
+      width: 100%;
+      height: 100%;
+    }
+  }
 
 }
