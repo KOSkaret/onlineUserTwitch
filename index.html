@@ -12,30 +12,16 @@
 
     <div class="stream" id='twitch-embed'></div>
 
+
     <div class="streamers">
+
         <form action="">
-          <input type="search" name="twitch" id="twitchSearch">
-        </form>
-
-      <article class="twitcher">
-        <!--Under channel, display_name-->
-        <div class="twitcher_user">
-          <h1>DansGaming</h1>
-          <!--Under channel, game.-->
-          <p>Currently playing  BATMAN -The Telltale Series</p>
-          <div class="twitcher_status online">Online</div>
-        </div>
-      </article>
-
-      <article class="twitcher">
-        <!--Under channel, display_name-->
-          <h1>DansGaming</h1>
-          <!--Under channel, game.-->
-          <p>Currently playing  BATMAN -The Telltale Series</p>
-          <div class="twitcher_status online">Online</div>
-      </article>
-      
+            <input type="search" name="twitch" placeholder="Search here" id="twitch-search">
+          </form>
+          <div class="articles" id="twitch-streamers">
+          </div>
     </div>
+    <script src="js/jquery.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
