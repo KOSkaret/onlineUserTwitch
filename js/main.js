@@ -10,9 +10,6 @@ let streamerArray = ["esl_csgo","geekygoonsquad","nocopyrightsounds","tejbz","sh
 var twitchUrl = "http://player.twitch.tv/?channel=monstercat&autoplay=false";
 var baseTwitchUrl = "https://wind-bow.gomix.me/twitch-api/streams/";
 
-function getTwitchPlayerURL(user){
-  return 'http://player.twitch.tv/?channel='+ user +'&autoplay=false'
-}
 
 function checkAndInsertData(data,user){
   var insertString = ""
@@ -57,6 +54,7 @@ function getData( user){
     dataType: "jsonp",
     success: function(data){
       checkAndInsertData(data,user);
+      console.log(JSON.stringify(data))
     }
   });
 }
@@ -88,4 +86,10 @@ function offlineString(data,name){
 function onlineString(stream,data,name){
   return '<article><h1>'+ name +'</h1><p>'+ stream.game +'</p>'+
          '<a href="https://www.twitch.tv/' + name  +'" target="_blank">View on twitch</a><div class="btn" id="'+ name +'">View here</div> <div class="twitcher_status online">Online</div></article>';
+}
+
+function sortArray(array){
+  return array.sort(function(a, b){
+    return a.localeCompare(b);
+  });
 }
