@@ -1,0 +1,19 @@
+.btn{
+    padding: 5px;
+    border-radius: 4px;
+    margin-left: 10px;
+    margin-top: 5px;
+    background-color: $background-button;
+
+    font-weight: bold;
+
+    a{
+        text-decoration: none;
+        color: $black;
+    }
+}
+
+.btn:hover{
+    background-color: $background-button-highlight;
+    cursor: pointer;
+}

@@ -16,6 +16,8 @@ $purple-700: #7b1fa2;
 $deep-purple-500: #673ab7;
 $deep-purple-700: #512da8;
 
+$deep-purple-A700: #6200EA;
+
 $green-A400: #00e676;
 
 $red-A400:#ff1744;
@@ -30,3 +32,7 @@ $twitcher-text: $gray-700;
 
 $status-online: $green-A400;
 $status-offline: $red-A400;
+
+//button colors
+$background-button: $deep-purple-700;
+$background-button-highlight: $deep-purple-A700;

@@ -74,18 +74,22 @@ function checkAndInsertData(data,user){
     };
 }
 
+function getTwitchPlayerURL(name){
+  return "http://player.twitch.tv/?channel="+ name +"&autoplay=false";
+}
+
 var resizeEvent = window.addEventListener('resize',function(){
   resizeEmbeddedPlayer(TWITCH_EMBED);
 });
 
 function offlineString(data,name){
   return '<article><a href="'+ data.channel +'"></a><h1>'+ name +'</h1>' +
-  '<a href="https://www.twitch.tv/' + name  +'" target="_blank">View on twitch</a> <div class="btn" id="'+ name +'">View here</div> <div class="twitcher_status offline">Offline</div><article>';
+  '<div class="row"><div class="btn"><a href="https://www.twitch.tv/' + name  +'" target="_blank">View on twitch</a></div> <div class="btn" id="'+ name +'">View here</div></div> <div class="twitcher_status offline">Offline</div><article>';
 } 
 
 function onlineString(stream,data,name){
   return '<article><h1>'+ name +'</h1><p>'+ stream.game +'</p>'+
-         '<a href="https://www.twitch.tv/' + name  +'" target="_blank">View on twitch</a><div class="btn" id="'+ name +'">View here</div> <div class="twitcher_status online">Online</div></article>';
+         '<div class="row"><div class="btn"><a href="https://www.twitch.tv/' + name  +'" target="_blank">View on twitch</a></div><div class="btn" id="'+ name +'">View here</div></div> <div class="twitcher_status online">Online</div></article>';
 }
 
 function sortArray(array){
