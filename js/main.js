@@ -5,7 +5,7 @@ const TWITCH_STREAMERS = $("#twitch-streamers");
 const TWITCH_SEARCH = $("#twitch-search");
 
 //Variables, URL or other resources.
-let streamerArray = ["esl_csgo","geekygoonsquad","nocopyrightsounds","tejbz","shroud","summit1g"];
+let streamerArray = ["esl_csgo","geekygoonsquad","nocopyrightsounds","tejbz","shroud","summit1g","ESL_SC2", "OgamingSC2", "cretetion", "freecodecamp", "storbeck", "habathcx", "RobotCaleb", "noobs2ninjas"];
 
 var baseTwitchUrl = "https://wind-bow.gomix.me/twitch-api/streams/";
 var endTwitchUrl = "?callback=?";
