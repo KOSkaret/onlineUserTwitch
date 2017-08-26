@@ -12,11 +12,7 @@ span, svg {
   display: inline-flex;
   flex-direction: row; }
 
-.container {
-  background-color: #673ab7; }
-
 .header {
-  grid-area: header;
   justify-content: space-around;
   border-bottom: 2px solid #000;
   font-size: 180%;
@@ -24,55 +20,24 @@ span, svg {
   background: #512da8;
   font-family: "Archivo", sans-serif; }
 
-#twitch-embed {
-  grid-area: main; }
-  #twitch-embed iframe {
-    border-style: none;
-    height: 100%; }
-
 .streamers {
-  grid-area: sidebar;
   font-family: "Open Sans", sans-serif;
   display: flex;
-  flex-direction: column; }
-  .streamers form {
-    background: #673ab7;
-    margin-bottom: 5px; }
-    .streamers form #twitch-search {
-      background: inherit;
-      padding: 5px;
-      border: solid;
-      border-radius: 7px;
-      width: 100%;
-      height: 100%;
-      color: #000; }
-
-.articles {
+  flex-direction: column;
   overflow-y: scroll;
   flex-grow: 1; }
 
-.row {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start; }
-
-@media screen and (min-width: 730px) {
-  .container {
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 0px 40% calc(60% - 30px) 0px;
-    grid-template-rows: 10% calc(88% - 10px) 2%;
-    grid-template-areas: "header header header header" ". sidebar main ." ". . . .";
-    grid-gap: 10px 10px; } }
 #twitch-streamers > article {
+  min-height: 120px;
   flex: 1;
   display: flex;
   flex-direction: column;
   background-color: #FFF;
   box-shadow: 1px 1px 3px #111;
   padding: 10px; }
-  #twitch-streamers > article .twitcher_status {
-    align-self: flex-end; }
+  #twitch-streamers > article a {
+    text-decoration: none;
+    color: #000; }
   #twitch-streamers > article p {
     color: #616161; }
   #twitch-streamers > article h1 {
@@ -80,24 +45,12 @@ span, svg {
     font-weight: 700; }
 
 .online {
-  color: #00e676; }
+  flex-direction: column;
+  color: #00e676;
+  align-self: flex-end; }
 
 .offline {
-  color: #ff1744; }
-
-.btn {
-  padding: 5px;
-  border-radius: 4px;
-  margin-left: 10px;
-  margin-top: 5px;
-  background-color: #512da8;
-  font-weight: bold; }
-  .btn a {
-    text-decoration: none;
-    color: #000; }
-
-.btn:hover {
-  background-color: #6200EA;
-  cursor: pointer; }
+  color: #ff1744;
+  align-self: flex-end; }
 
 /*# sourceMappingURL=main.css.map */

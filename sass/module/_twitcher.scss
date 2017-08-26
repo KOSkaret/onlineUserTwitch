@@ -1,5 +1,9 @@
 #twitch-streamers>article{
-
+  a{
+    text-decoration: none;
+    color: $black;
+  }
+  min-height: 120px;
   flex: 1;
 
   display: flex;
@@ -9,10 +13,6 @@
   box-shadow: 1px 1px 3px #111;
   
   padding: 10px;
-
-  .twitcher_status{
-    align-self: flex-end;
-  }
 
   p {
     color: $twitcher-text;
@@ -25,9 +25,12 @@
 }
 
 .online{
+  flex-direction: column;
   color: $status-online;
+  align-self: flex-end;
 }
 
 .offline{
   color: $status-offline;
+  align-self: flex-end;
 }
